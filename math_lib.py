@@ -1,18 +1,16 @@
-import sys
-op = sys.argv[1]
-a = int(sys.argv[2])
-b = int(sys.argv[3])
+import numpy
 
-if op == 'add':
-    print(a + b)
-elif op == 'sub':
-    print (a - b)
-elif op == 'mult':
-    print (a * b)
-elif op == 'div':
+def add(a,b):
+    return a + b
+
+def sub(a,b):
+    return a - b
+
+def mult(a,b):
+    return a * b
+
+def div(a,b):
     if b != 0:
-        print (a / b)
+        return a / b
     else:
-        print("Nice try cowboy")
-else:
-    print("unknown operator")
+        return 'Nice try cowboy'
